@@ -1,16 +1,82 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Music Mixer</title>
-<!--Connecting with Google -->
-<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&family=Road+Rage&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>CONTROL OUR BAND</title>
 </head>
-<body>
-    <h1 class="hidden">This Will be the Music Mixer</h1>
-    <!--this is the main java script-->
-<script src="js/main.js"></script> 
-</body> 
-</html>
+    <body >
+        <main>
+            <h1 class="hidden">Rock your browser - Music Mixer Assignment</h1>
+        </main>
+     <header class="grid-con ">
+        <!--<div class="box col-start-1 col-end-4 m-col-start-1 m-col-end-4">Logo</div>-->
+        <div class="box col-start-1 col-end-5 m-col-start-1 m-col-end-13 l-col-start-1 m-col-end-13">
+            <h2 class="h2_control">CONTROL OUR BAND</H2>
+                <h3>DRAG AND DROP THE INSTRUMENTS TO START THE CONCERT</h3>
+        </div>
+     </header>
+     <section class="grid-con" id="Musicians">
+        <h2 class="hidden">CHOOSE YOUR INSTRUMENT</h2>
+        <div class="box_instrument box col-start-1 col-end-2 m-col-start-4 m-col-end-5 l-col-start-2 l-col-end-5" id="keyboard">
+             <img src="images/keyboard.png" class="image_instrument">
+        </div>
+        <div class="box_instrument box col-start-1 col-end-2 m-col-start-4 m-col-end-8 l-col-start-5 l-col-end-8" id="bass">
+             <img src="images/bass.png" class="image_instrument">
+        </div>
+        <div class="box_instrument box col-start-1 col-end-2 m-col-start-8 m-col-end-11 l-col-start-8 l-col-end-11" id="drums">
+            <img src="images/drums.png" class="image_instrument">  
+        </div>
+     
+        <div class="box_instrument box col-start-1 col-end-2 m-col-start-11 m-col-end-13 l-col-start-11 l-col-end-13" id="guitar">
+   <img src="images/guitar.png" class="image_instrument_guitar">
+        </div>
+    </section>
 
+     <section class="grid-con" id="image_of_band">
+        <div class="box col-start-1 col-end-5 m-col-start-1 m-col-end-13 l-col-start-1 m-col-end-13">
+            <object data="images/the_band_3.svg" type="image/svg+xml" id="Layer_1"></object>
+        </div>    
+    </section>
+   
+    
+    <section class="grid-con" id="sound_board">
+        <h2 class="hidden">SOUNDBOARD</h2>
+        <div class="box_sound_board box col-start-1 col-end-2 m-col-start-4 m-col-end-5 l-col-start-2 l-col-end-5" id="instru_1">
+             <h4>Bring your instrument here</h4>
+        </div>
+        <div class="box_sound_board box col-start-1 col-end-2 m-col-start-4 m-col-end-8 l-col-start-5 l-col-end-8" id="instru_2">
+            <h4>Bring your instrument here</h4>
+        </div>
+        <div class="box_sound_board box col-start-1 col-end-2 m-col-start-8 m-col-end-11 l-col-start-8 l-col-end-11" id="instru_3">
+            <h4>Bring your instrument here</h4>
+        </div>
+     
+        <div class="box_sound_board box col-start-1 col-end-2 m-col-start-11 m-col-end-13 l-col-start-11 l-col-end-13" id="instru_4">
+            <h4>Bring your instrument here</h4>
+        </div>
+    </section>
+    
+<!--<section class="grid-con" id="controls">
+    <div class="footer box col-start-1 col-end-2 m-col-start-1 m-col-end-4 l-col-start-1 l-col-end-4">Play</div>
+    <div class="footer box col-start-2 col-end-2 m-col-start-3 m-col-end-6 l-col-start-2 l-col-end-3">Pause</div>
+    <div class="footer box col-start-4 col-end-5 m-col-start-6 m-col-end-12 l-col-start-6 l-col-end-12">Volume</div>
+    
+
+     </footer>
+
+
+     <footer class="grid-con">
+    <div class="footer box col-start-1 col-end-5 m-col-start-1 m-col-end-13 l-col-start-1 l-col-end-13">Footer</div>
+
+     </footer>-->
+    </body>
+</html>
