@@ -25,59 +25,6 @@ body, p, h1, h2, h3, h4, h5 {
    display: none;
 }
 
-.box {
-   background-color: rgb(0, 0, 0);
-   color: rgb(255, 255, 255);
-   border-radius: 5px;
-   padding: 5px;
-   text-align: center;
-   margin-top: 10px;
-   margin-bottom:10px;
- }
-
-
- .box_channel {
-   background-color: rgb(255, 255, 255);
-   color: rgb(255, 255, 255);
-   border-radius: 5px;
-   padding: 20px;
-   text-align: center;
-   margin-top: 10px;
-   margin-bottom:10px;
- }
-
-
- .box_instrument{
-   height: 100px;
-   width: 100px;
-   background-color: #fff;
-   color: #000;
-   border-width: 4px;
-   border-color: yellow;
- }
-
-
- .box_sound_board{
-   height: 100px;
-   width: 100px;
-   background-color: #fff;
-   color: #000;
- 
- }
-
- .box_sound_board:hover{
-   background-color: #fff;
-   color: #000;
-   border-width: 5px;
-   border-color: #c90101;
-   border-style: dashed;
- }
-
-
- .box_products{
-   height: 200px;
-   width: 200px;
- }
 
  .footer{
    height: 150px;
@@ -91,6 +38,11 @@ body, p, h1, h2, h3, h4, h5 {
    the other grid will sit in the middle column, this allows for overlapping content */
    display: grid; 
 	grid-template-columns: 1fr minmax(0, 1200px) 1fr;  
+
+
+  
+
+
 }
 
  .grid-con { 
@@ -101,8 +53,8 @@ body, p, h1, h2, h3, h4, h5 {
    margin: 0 auto;
    padding-left: 15px;
    padding-right: 15px;
-}
 
+  }
 
 .col-span-1	{grid-column: span 1 / span 1;}
 .col-span-2	{grid-column: span 2 / span 2;}
@@ -125,19 +77,122 @@ body, p, h1, h2, h3, h4, h5 {
 
 
 
-
 /* ---Tablet Library Grid Styles--- */
 
 /*here's creating a grid for tablet*/
 
 @media screen and (min-width: 768px) { 
 
+   .grid-con .h2_control {
+      font-size: 65px;
+  }
+
+  .grid-con .h3 {
+   font-size: 16px;
+}
+
+
+.grid-con .play {
+   margin-top: 20px;
+   width: 40px;
+   height: 40px;
+   transition: width 0.3s ease, height 0.3s ease
+}
+
+.grid-con .play:hover {
+   width: 50px;
+   height: 50px;
+}
+
+ .grid-con .pause {
+   margin-top: 20px;
+   width: 40px;
+   height: 40px;
+   transition: width 0.3s ease, height 0.3s ease
+}
+
+.grid-con .pause:hover {
+   width: 50px;
+   height: 50px;
+}
+
+
+.grid-con .restart {
+   margin-top: 20px;
+   width: 40px;
+   height: 40px;
+   transition: width 0.3s ease, height 0.3s ease
+ }
+
+ .grid-con .restart:hover{
+   width: 50px;
+   height: 50px;
+
+ }
+
+
+ .grid-con .sound-board-live {
+   margin-left: 60px;
+   margin-top:30px; 
+   border-width: 2px;
+   width: 100px;
+   height: 100px;
+   border: thin dashed white; 
+   transition: width 0.3s ease, height 0.3s ease;
+   
+}
+
+
+
+.grid-con .sound-board-live:hover {
+   width: 105px;
+   height: 105px;
+
+}
+
+.grid-con .vol_control {
+   width: 300px;
+   height: 20px;
+   margin-top: 35px;
+   background-color: #EC18BD;
+   border-radius: 10px;
+   -webkit-appearance: none; 
+   appearance: none;
+   outline: none; 
+   margin-left: 50px;
+}
+
+
+.grid-con  .pick-your-instrument {
+   display: flex;
+   margin-left: 60px;
+   margin-top:30px; 
+   border-width: 2px;
+   width: 100px;
+   height: 100px;
+   background-color: #ffffff;
+   border: thin dashed white; 
+   transition: width 0.3s ease, height 0.3s ease;
+
+}
+
+.grid-con  .pick-your-instrument:hover {
+   display: flex;
+   margin-top:30px; 
+   border-width: 2px;
+   width: 105px;
+   height: 105px;
+   border: thin dashed #EC18BD;
+}
+
+
+
    .grid-con { 
       display: grid; 
       grid-template-columns: repeat(12, minmax(0, 1fr));
       grid-column-gap: 20px;
-
    }
+
 
    .m-col-span-1	{grid-column: span 1 / span 1;}
    .m-col-span-2	{grid-column: span 2 / span 2;}
@@ -181,6 +236,8 @@ body, p, h1, h2, h3, h4, h5 {
    .m-col-end-12	{grid-column-end: 12;}
    .m-col-end-13	{grid-column-end: 13;}
 
+   
+
 }
 
 
@@ -190,6 +247,115 @@ body, p, h1, h2, h3, h4, h5 {
 /* ---Desktop Library Grid Styles--- */
 
 @media screen and (min-width: 1200px) { 
+   
+   .grid-con .h2_control {
+      font-size: 65px;
+  }
+
+  .grid-con .h3 {
+   font-size: 16px;
+}
+
+
+.grid-con .play {
+   margin-left: 50px;
+   margin-top: 10px;
+   width: 40px;
+   height: 40px;
+   transition: width 0.3s ease, height 0.3s ease;
+}
+
+.grid-con .play:hover {
+   width: 50px;
+   height: 50px;
+}
+
+ .grid-con .pause {
+   margin-left: 50px;
+   margin-top: 10px;
+   width: 40px;
+   height: 40px;
+   transition: width 0.3s ease, height 0.3s ease;
+}
+
+.grid-con .pause:hover {
+   width: 50px;
+   height: 50px;
+}
+
+
+.grid-con .restart {
+   margin-left: 50px;
+   margin-top: 10px;
+   width: 40px;
+   height: 40px;
+   transition: width 0.3s ease, height 0.3s ease;
+ }
+
+ .grid-con .restart:hover{
+   width: 50px;
+   height: 50px;
+
+ }
+
+
+ .grid-con .sound-board-live {
+   margin-left: 60px;
+   margin-top:30px; 
+   border-width: 2px;
+   width: 100px;
+   height: 100px;
+   border: thin dashed white; 
+   transition: width 0.3s ease, height 0.3s ease;
+   
+}
+
+
+
+.grid-con .sound-board-live:hover {
+   width: 105px;
+   height: 105px;
+
+}
+
+.grid-con .vol_control {
+   width: 300px;
+   height: 20px;
+   margin-top: 35px;
+   background-color: #EC18BD;
+   border-radius: 10px;
+   -webkit-appearance: none; 
+   appearance: none;
+   outline: none; 
+   margin-left: 50px;
+}
+
+
+.grid-con  .pick-your-instrument {
+   display: flex;
+   margin-left: 60px;
+   margin-top:30px; 
+   border-width: 2px;
+   width: 100px;
+   height: 100px;
+   background-color: #ffffff;
+   border: thin dashed white; 
+   transition: width 0.3s ease, height 0.3s ease;
+
+}
+
+.grid-con  .pick-your-instrument:hover {
+   display: flex;
+   margin-top:30px; 
+   border-width: 2px;
+   width: 105px;
+   height: 105px;
+   border: thin dashed #EC18BD;
+}
+
+
+
+
 
    .grid-con { 
       display: grid; 
@@ -198,6 +364,9 @@ body, p, h1, h2, h3, h4, h5 {
       padding-left: 15px;
       padding-right: 15px;
    }
+
+  
+
 
    .l-col-span-1	{grid-column: span 1 / span 1;}
    .l-col-span-2	{grid-column: span 2 / span 2;}
@@ -240,5 +409,8 @@ body, p, h1, h2, h3, h4, h5 {
    .l-col-end-11	{grid-column-end: 11;}
    .l-col-end-12	{grid-column-end: 12;}
    .l-col-end-13	{grid-column-end: 13;}
+
+
+   
 
 }
