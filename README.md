@@ -12,4 +12,14 @@ This project intend to explore sounds emitted by a Rock band and your musical in
 ### Author
 * Rodrigo Nascimento - Section B
 
+
+### Music (royalty free - all rights reserved)
+* Drums: https://samplefocus.com/samples/reggae-drums
+
+* Guitar: https://samplefocus.com/samples/blues-lick-d-minor-passionate-loop
+
+* Bass: https://samplefocus.com/samples/bouncy-reggae-bass
+
+* Keyboard: https://samplefocus.com/samples/wurl_140b-mellow
+
 ### repository name: Nascimento_Rodrigo_hw3
